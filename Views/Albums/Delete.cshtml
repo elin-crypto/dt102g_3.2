@@ -1,0 +1,21 @@
+﻿@model Mom3._2.Models.Album
+
+@{
+    ViewData["Title"] = "Radera";
+}
+
+<h1 class="italic">Radera Album</h1>
+
+<h3 class="link-color">Är du säker på att du vill radera detta album?</h3>
+<div>
+    <hr />
+    <p><span class="italic">@Html.DisplayNameFor(model => model.Artist): &emsp;</span> <span class="white">@Html.DisplayFor(model => model.Artist)</span></p>
+    <p><span class="italic">@Html.DisplayNameFor(model => model.AlbumTitle): &emsp;</span> <span class="white">@Html.DisplayFor(model => model.AlbumTitle)</span></p>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="AlbumId" />
+        <input type="submit" value="Radera" class="btn btn-danger" /> 
+        <br />
+        <a class="link-color" asp-action="Index">Tillbaka till listan</a>
+    </form>
+</div>

@@ -1,0 +1,19 @@
+﻿@model Mom3._2.Models.Album
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="italic">Info</h1>
+
+<div>
+
+    <hr />
+    <p><span class="italic">@Html.DisplayNameFor(model => model.Artist): &emsp;</span> <span class="white">@Html.DisplayFor(model => model.Artist)</span></p>
+    <p><span class="italic">@Html.DisplayNameFor(model => model.AlbumTitle): &emsp;</span> <span class="white">@Html.DisplayFor(model => model.AlbumTitle)</span></p>
+
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.AlbumId">Ändra</a> |
+    <a asp-action="Index">Tillbaka till listan</a>
+</div>

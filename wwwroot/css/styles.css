@@ -1,0 +1,324 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+/* ***************************
+RESET THE PAGE
+******************************/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+    line-height: 1.6; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+    margin: 0;
+}
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+    display: block;
+}
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+}
+
+    a:visited {
+        color: #fff;
+    }
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+}
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+    font-style: normal;
+    font-weight: 900;
+}
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code, kbd, samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+    font-size: 100%;
+}
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+    border-style: none;
+    max-width: 100%;
+    display: block;
+}
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+    display: none;
+}
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+    display: none;
+}
+/*==============================================
+    ===========================================
+    ===========================================
+    MY CODE BEGINS HERE!
+    ===========================================
+    ===========================================
+==============================================*/
+
+body {
+    background-color: midnightblue;
+    color: crimson;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.3em;
+    min-height: 100vh;
+}
+#logotyp {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 3em;
+    text-align: center;
+    margin: 1em auto 0 auto;
+}
+#logotyp a {
+    color: darkorange;
+}
+.navbar-toggler-icon {
+    visibility: hidden;
+}
+main {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    max-width: 900px;
+    position: relative;
+    margin: 4em auto;
+}
+h1 {
+    font-size: 2.5em;
+}
+nav {
+    width: 100%;
+    overflow: hidden;
+}
+
+    nav ul {
+        list-style: none;
+        position: relative;
+        float: left;
+        display: block;
+        top: 1em;
+        left: 50%;
+    }
+
+        nav ul li {
+            position: relative;
+            float: left;
+            display: block;
+            right: 50%;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            font-weight: 700;
+        }
+    nav .text-dark {
+        color: crimson;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+            nav .text-dark:hover {
+                text-decoration: underline;
+            }
+
+form {
+    margin: 0 auto;
+    text-align: left;
+}
+
+select {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1em;
+    font-weight:300;
+    padding: 0.3em 0.5em;
+    margin-bottom: 1em;
+    font-weight: 700;
+}
+label {
+    margin-right: 1em;
+}
+input[type=text],
+input[type=date] {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+input[type=submit] {
+    background-color: darkorange;
+    font-size: 1.2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    border: none;
+    padding: 0.3em 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 700;
+}
+
+    input[type=submit]:hover {
+        background-color: crimson;
+        color: #fff;
+    }
+
+span.text-danger {
+    color: greenyellow;
+    padding: 0 0.3em;
+}
+ span.white {
+    color: #fff;
+}
+a.btn {
+    background-color: deeppink;
+    font-size: 1.2em;
+    border: none;
+    padding: 0.3em 1em;
+}
+
+    a.btn:hover {
+        background-color: orange;
+        color: #fff;
+    }
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em 0 3em 0;
+}
+.italic {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.contentHeader {
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    text-align: center;
+}
+a.link-color {
+    color: darkorange;
+}
+.b-child {
+    margin-bottom: 1em;
+}
+table {
+    margin-top: 2em;
+    color: #fff;
+}
+table thead th {
+    text-align: left !important;
+}
+table th {
+    color: crimson;
+    text-transform: uppercase;
+    font-style: italic;
+
+}
+table th, td {
+    padding-right: 3em;
+}
+td.link-color {
+    color: darkorange;
+}
+
+.footerContent {
+    margin: 0 auto 1em auto;
+    background-color: blue;
+    color: crimson;
+    text-align: right;
+    padding-right: 1em;
+}

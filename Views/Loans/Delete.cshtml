@@ -1,0 +1,23 @@
+﻿@model Mom3._2.Models.Loan
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 class="italic">Lämna tillbaka</h1>
+
+<h3>Är du säker på att du vill lämna tillbaka skivan?</h3>
+<div>
+
+    <hr />
+
+    <p><span class="italic">@Html.DisplayNameFor(model => model.FriendName): &emsp;</span> <span class="white">@Html.DisplayFor(model => model.FriendName)</span></p>
+    <p><span class="italic">@Html.DisplayNameFor(model => model.Album): &emsp;</span> <span class="white">@Html.DisplayFor(model => model.Album.Artist) - @Html.DisplayFor(model => model.Album.AlbumTitle)</span></p>
+    
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="LoanId" />
+        <input type="submit" value="Lämna tillbaka" class="btn btn-danger" /> <br />
+        <a asp-action="Index">Avbryt</a>
+    </form>
+</div>

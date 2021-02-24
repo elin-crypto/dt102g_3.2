@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Mom3._2.Models.Album>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="italic">Skivlista</h1>
+
+<p>
+    <a asp-action="Create" class="link-color">Lägg till ny</a>
+</p>
+
+<form asp-action="Index" method="get">
+    <p>
+        <input type="text" name="SearchString" />
+        <input type="submit" value="Filtrera" />
+    </p>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Artist)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AlbumTitle)
+            </th>
+            <th>
+                <!--is it availible or not?-->
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Artist)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlbumTitle)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AlbumId">Ändra</a> /
+                <a asp-action="Delete" asp-route-id="@item.AlbumId">Radera</a>
+            </td>
+            @if (item.Available == false)
+            {
+                <td class="link-color">
+                    Utlånad
+                </td>
+            }
+        </tr>
+}
+    </tbody>
+</table>
